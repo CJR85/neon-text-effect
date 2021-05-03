@@ -1,5 +1,9 @@
 const btn = document.getElementById('btn');
 
 btn.onclick = function () {
-  btn.classList.add('neon');
+  if (btn.classList.contains('neon')) {
+    btn.classList.remove('neon');
+  } else {
+    btn.classList.add('neon');
+  }
 };
